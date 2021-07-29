@@ -138,6 +138,22 @@ h2 {
   margin-bottom: 83px;
 }
 
+.fa-html5 {
+  color: #ff4c2c;
+}
+
+.fa-js {
+  color: #ff792a;
+}
+
+.fa-css3-alt {
+  color: #0065e4;
+}
+
+.fa-wordpress-simple {
+  color: #007294;
+}
+
 .program-list {
   display: flex;
   justify-content: space-between;
@@ -149,7 +165,8 @@ h2 {
   align-items: center;
 }
 
-.program-item > img {
+.program-item > i {
+  font-size: 110px;
   margin-bottom: 24px;
 }
 
@@ -188,10 +205,14 @@ h2 {
   margin-bottom: 47px;
 }
 
-.portfolio > p {
+.portfolio > a > p {
+  cursor: pointer;
+}
+
+.portfolio > a {
   margin: 44px 0px 99px 0px;
   text-decoration: underline;
-  cursor: pointer;
+  color: #070707;
 }
 
 footer {
@@ -224,9 +245,16 @@ footer > button {
   cursor: pointer;
 }
 
+footer > button > a {
+  color: white;
+}
+
 footer > button:hover {
-  color: black;
   background-color: white;
+}
+
+footer > button:hover > a {
+  color: black;
 }
 
 .social-media {
@@ -236,8 +264,18 @@ footer > button:hover {
   margin-bottom: 45px;
 }
 
-.social-media > img {
+.social-media i {
+  font-size: 40px;
   cursor: pointer;
+}
+
+.social-media i:hover {
+  color: black;
+}
+
+footer > p > a:hover {
+  color: black;
+  text-decoration: underline;
 }
 
 footer > p:last-of-type {
@@ -260,95 +298,95 @@ footer > p:last-of-type {
 }
 
 @media (max-width: 640px) {
-    img {
-        max-width: 416px;
-      }
-      .container {
-        max-width: 416px;
-      }
-      .nav-menu {
-        display: none;
-      }
-      .burger {
-        width: 33px;
-        display: block;
-        position: absolute;
-        top: 65px;
-        right: 0px;
-        cursor: pointer;
-      }
-    
-      .hero {
-        padding-top: 65px;
-        padding-bottom: 83px;
-      }
-    
-      .lang-panel {
-        display: none;
-      }
-    
-      .title-container {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    
-      .title-container > h1 {
-        margin-bottom: 23px;
-      }
-    
-      .title-container > p {
-        margin-bottom: 36px;
-      }
-    
-      br {
-        display: none;
-      }
-    
-      .about {
-        padding-top: 81px;
-        padding-bottom: 76px;
-      }
-    
-      .about > div {
-        max-width: 316px;
-      }
-    
-      .skills {
-        padding-bottom: 98px;
-      }
-    
-      .program-list {
-        flex-direction: column;
-        align-items: center;
-      }
-    
-      .program-item {
-        margin-bottom: 81px;
-      }
-    
-      .program-item:last-of-type {
-        margin-bottom: 0px;
-      }
-    
-      footer {
-        padding-top: 82px;
-        padding-bottom: 90px;
-      }
-    
-      footer br {
-        display: inline;
-      }
+  img {
+    max-width: 416px;
+  }
+  .container {
+    max-width: 416px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .burger {
+    width: 33px;
+    display: block;
+    position: absolute;
+    top: 65px;
+    right: 0px;
+    cursor: pointer;
+  }
+
+  .hero {
+    padding-top: 65px;
+    padding-bottom: 83px;
+  }
+
+  .lang-panel {
+    display: none;
+  }
+
+  .title-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title-container > h1 {
+    margin-bottom: 23px;
+  }
+
+  .title-container > p {
+    margin-bottom: 36px;
+  }
+
+  br {
+    display: none;
+  }
+
+  .about {
+    padding-top: 81px;
+    padding-bottom: 76px;
+  }
+
+  .about > div {
+    max-width: 316px;
+  }
+
+  .skills {
+    padding-bottom: 98px;
+  }
+
+  .program-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program-item {
+    margin-bottom: 81px;
+  }
+
+  .program-item:last-of-type {
+    margin-bottom: 0px;
+  }
+
+  footer {
+    padding-top: 82px;
+    padding-bottom: 90px;
+  }
+
+  footer br {
+    display: inline;
+  }
 }
 
 @media (max-width: 640px) {
-    .hero img:first-of-type {
-        display: none;
-      }
-      .hero img:last-of-type {
-        max-width: 416px;
-        width: 110%;
-        display: block;
-      }
+  .hero img:first-of-type {
+    display: none;
+  }
+  .hero img:last-of-type {
+    max-width: 416px;
+    width: 110%;
+    display: block;
+  }
 }
 
 @media (max-width: 375px) {
